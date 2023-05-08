@@ -15,8 +15,8 @@
 :root {
   --pointc1: #d7e9b9;
   --pointc2: #fffbac;
-  --pointc3: #ffd495;
-  --pointc4: #faab78;
+  --pointc3: #f1bf73;
+  --pointc4: #f0863f;
   --fs: 24px;
 }
 
@@ -38,6 +38,7 @@ h2 {
   font-size: 32px;
   text-align: center;
   padding: 1rem 0;
+  color: var(--pointc4);
 }
 
 .guide_chat {
@@ -65,12 +66,19 @@ h2 {
 
 #btnSendMessage,
 #btn {
-  border: none;
+  border: 2px solid var(--pointc3);
   outline: none;
   background-color: var(--pointc3);
   border-radius: 0.5rem;
   padding: 0.5rem;
   margin-top: 1rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#btnSendMessage:hover,
+#btn:hover {
+  background-color: #fffffc;
+  color: var(--pointc4);
 }
 
 .chat_con {
@@ -100,6 +108,9 @@ h2 {
 .fa-spinner {
   font-size: 1.5rem;
 }
+.chat_message {
+  display: flex;
+}
 
 .chat_message > p {
   background-color: blanchedalmond;
@@ -107,13 +118,19 @@ h2 {
   border-radius: 1rem;
   margin: 0.5rem 0;
   text-align: right;
+  max-width: 80%;
 }
-.chat_message:first-child {
+.chat_message:nth-child(odd) {
+  justify-content: flex-end;
+}
+/* .chat_message:first-child {
   display: none;
-}
+} */
+
 .chat_message .assistant {
-  text-align: left;
   background-color: white;
+  text-align: left;
+  width: 80%;
 }
 .chat-input {
   width: calc(100% - 2rem);
@@ -147,10 +164,12 @@ h2 {
   margin: 0.5rem auto 0;
   padding: 0.25rem;
   border-radius: 0.5rem;
-  border: none;
   outline: none;
+  border: 2px solid var(--pointc4);
   background-color: var(--pointc4);
+  cursor: pointer;
 }
+
 /* kakaoad 영역 */
 .kakaoad {
   border: 1px solid #dfdfdf;

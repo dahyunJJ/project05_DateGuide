@@ -30,7 +30,11 @@ const sendMessage = async () => {
   const chatInput = document.querySelector(".chat-input input");
   const chatMessageDiv = document.createElement("div");
   chatMessageDiv.classList.add("chat_message");
-  chatMessageDiv.innerHTML = `<p>${chatInput.value}</p>`;
+  if (chatInput.value !== "") {
+    chatMessageDiv.innerHTML = `<p>${chatInput.value}</p>`;
+  } else {
+    chatMessageDiv.innerHTML = `<p hidden>${chatInput.value}</p>`;
+  }
   chatCon.appendChild(chatMessageDiv);
 
   userMessages.push(chatInput.value);

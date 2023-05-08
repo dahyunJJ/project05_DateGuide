@@ -1,4 +1,4 @@
-let apiKey = ""; // api 생성한 키값
+let apiKey = "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"; // api 생성한 키값
 
 const { Configuration, OpenAIApi } = require("openai"); //openai 설치
 const serverless = require("serverless-http");
