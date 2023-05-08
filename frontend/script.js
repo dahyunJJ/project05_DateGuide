@@ -42,7 +42,7 @@ const sendMessage = async () => {
 
   //
   const response = await fetch(
-    "https://wkrhlz7zzk.execute-api.ap-northeast-2.amazonaws.com/props/guide",
+    "https://psdaj45nek.execute-api.ap-northeast-2.amazonaws.com/props/guide",
     // "http://localhost:3000/guide",
     {
       method: "post",
