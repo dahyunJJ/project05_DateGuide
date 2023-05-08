@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>DateGuide</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <h2>"데이트 코스 가이드"</h2>
+      <div class="guide_chat">
+        <label for="place">어느 지역에서 데이트하시나요?</label>
+        <input type="text" id="place" />
+        <label for="concept">어떤 데이트를 원하세요?</label>
+        <select name="date" id="concept">
+          <option value="romantic">로맨틱</option>
+          <option value="active">액티브</option>
+          <option value="culture">문화생활</option>
+          <option value="experience">이색체험</option>
+          <option value="theme">테마</option>
+          <option value="food">맛집</option>
+        </select>
+        <button id="btnSendMessage">코스짜기</button>
+      </div>
+      <div class="loder">
+        <!-- 로딩중 표시영역 -->
+        <i class="fa-solid fa-spinner fa-spin"></i>
+      </div>
+      <div class="chat_con">
+        <!--  -->
+      </div>
+      <div class="chat-input">
+        <input
+          type="text"
+          tabindex="1"
+          placeholder="데이트 코스와 관련된 다른 질문이 있나요?"
+        />
+        <button id="btn">질문하기</button>
+        <button class="restart">새로운 코스짜기</button>
+      </div>
+
+      <!-- kakaoadfit -->
+      <div class="kakaoad">
+        <ins
+          class="kakao_ad_area"
+          style="display: none"
+          data-ad-unit="DAN-8xb6SK7BgXPBRvXy"
+          data-ad-width="320"
+          data-ad-height="100"
+        ></ins>
+      </div>
+    </div>
+
+    <!-- kakaoadfit -->
+    <script
+      type="text/javascript"
+      src="//t1.daumcdn.net/kas/static/ba.min.js"
+      async
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

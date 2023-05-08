@@ -1,0 +1,170 @@
+@charset "utf-8";
+@font-face {
+  font-family: "DXTraveldiaryReg";
+  src: url(DX여행수첩Reg.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DXTraveldiaryReg";
+  font-size: var(--fs);
+}
+
+:root {
+  --pointc1: #d7e9b9;
+  --pointc2: #fffbac;
+  --pointc3: #ffd495;
+  --pointc4: #faab78;
+  --fs: 24px;
+}
+
+body {
+  background-image: url(./background-remon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.wrap {
+  background-color: #fffffc95;
+  border-radius: 1rem;
+  max-width: 600px;
+  margin: 1rem auto 0;
+  height: 94vh;
+  position: relative;
+}
+
+h2 {
+  font-size: 32px;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.guide_chat {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.guide_chat > label {
+  /* width: 30%; */
+  margin: 0.25rem 0;
+}
+.guide_chat > input,
+.guide_chat > select {
+  width: 100%;
+  margin: 0.5rem 0;
+  border: none;
+  border-bottom: 1px dotted var(--pointc4);
+  border-radius: 1rem;
+  outline: none;
+  padding: 0.5rem;
+}
+.guide_chat > input:focus {
+  background-color: var(--pointc2);
+}
+
+#btnSendMessage,
+#btn {
+  border: none;
+  outline: none;
+  background-color: var(--pointc3);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+.chat_con {
+  background-color: var(--pointc1);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0 0.5rem;
+  height: calc(96vh - 320px);
+  overflow-y: scroll;
+}
+.chat_con::-webkit-scrollbar {
+  width: 10px;
+}
+.chat_con::-webkit-scrollbar-track {
+  background-color: #fffbac90;
+}
+.chat_con::-webkit-scrollbar-thumb {
+  background-color: var(--pointc2);
+  border-radius: 8px;
+}
+.loder {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.fa-spinner {
+  font-size: 1.5rem;
+}
+
+.chat_message > p {
+  background-color: blanchedalmond;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin: 0.5rem 0;
+  text-align: right;
+}
+.chat_message:first-child {
+  display: none;
+}
+.chat_message .assistant {
+  text-align: left;
+  background-color: white;
+}
+.chat-input {
+  width: calc(100% - 2rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.25rem;
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  transform: translateX(-50%);
+}
+.chat-input > input {
+  padding: 0.25rem;
+  font-size: 16px;
+  flex: 1;
+  height: 40px;
+  border-radius: 0.5rem;
+}
+#btn {
+  font-size: 16px;
+  margin: 0 0.25rem;
+}
+#btn:focus {
+  border: 1px solid #fffffc;
+}
+.restart {
+  font-size: 16px;
+  width: 100%;
+  margin: 0.5rem auto 0;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: var(--pointc4);
+}
+/* kakaoad 영역 */
+.kakaoad {
+  border: 1px solid #dfdfdf;
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 400px) {
+  .chat_message > p {
+    font-size: 16px;
+  }
+  .chat_con {
+    padding: 0.5rem;
+  }
+}
