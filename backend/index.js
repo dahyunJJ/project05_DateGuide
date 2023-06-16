@@ -13,7 +13,7 @@ const app = express();
 
 // CORS 이슈 해결
 let corsOptions = {
-  origin: "https://dateguide.pages.dev",
+  origin: "https://dateguide.pages.dev/",
   credentials: true,
 };
 app.use(cors(corsOptions));
