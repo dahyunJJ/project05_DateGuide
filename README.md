@@ -26,9 +26,9 @@
 
 
 ### 구현 화면
-<img width="33%" src="https://github.com/dahyunJJ/project05_DateGuide/assets/117347407/e76a9722-0875-4cdc-a617-7ac043c82060">
-<img width="33%" src="https://github.com/dahyunJJ/project05_DateGuide/assets/117347407/1e268594-3b4c-4927-92eb-f58d00eaa32d">
-<img width="33%" src="https://github.com/dahyunJJ/project05_DateGuide/assets/117347407/c5a08e1c-e327-49fd-9454-b84dafaf3522"> <br/>
+<img width="32%" src="https://github.com/dahyunJJ/project05_DateGuide/assets/117347407/e76a9722-0875-4cdc-a617-7ac043c82060">
+<img width="32%" src="https://github.com/dahyunJJ/project05_DateGuide/assets/117347407/1e268594-3b4c-4927-92eb-f58d00eaa32d">
+<img width="32%" src="https://github.com/dahyunJJ/project05_DateGuide/assets/117347407/c5a08e1c-e327-49fd-9454-b84dafaf3522"> <br/>
 
 <br/>
 
